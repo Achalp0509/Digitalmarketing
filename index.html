@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Brand Store Infographic</title>
+    <link rel="icon" type="image/x-icon" href="C:\Users\Admin\Downloads\logo.jpg"> <!-- Link to the favicon -->
+         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        /* Your existing styles here */
+        /* Basic styling */
+        body
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height:500px;
+        }
+          
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        .infographic {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .chart {
+            position: relative;
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+        }
+
+        .circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 10px solid #f9f9f9;
+            border-radius: 50%;
+            top: 10px;
+            left: 10px;
+        }
+
+        .bar {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background-color: #36a2eb;
+            bottom: 0;
+            left: 0;
+        }
+
+        .percent {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
+
+        .label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            /* Increased margin */
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            /* Added border */
+            border-radius: 5px;
+            /* Added border radius */
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px 24px;
+            /* Increased padding */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            /* Added border radius */
+        }
+        
+    
+
+        
+        .swiper-container {
+            width: 90%; /* Adjust the width as needed */
+            margin: 0 auto;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: rgb(32, 31, 31); /* Change button color to red */
+            position: absolute;
+            top: 70%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        #infographics {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Your header content -->
+    </header>
+
+    
+    <header>
+        <h1 style="text-align:center;" >Clothing Brand Store</h1>
+        <nav>
+            
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="infographic.html">Infographics</a></li>
+                <li><a href="aboutus.html">about us</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <div>
+            <p
+                style="font-size: xx-large;color: #060325; text-align: center; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <b>FASHION IS THE ARMOR  TO SURVIVE THE REALITY OF EVERYDAY LIFE!.<b></b></p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://audaces.com/wp-content/uploads/2023/07/phygital-fashion-integrating.jpg" alt="Fashion Infographic 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.narcity.com/media-library/image.jpg?id=25903109&width=1245&height=700&coordinates=0%2C52%2C0%2C52" alt="Fashion Infographic 2">
+                        </div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+        
+            <div class="hyperlinktext" style="margin-right: 5px;">
+                </p>
+            </div>
+            <p style="font-size: x-large;color: rgb(6, 3, 55);font-style: italic; text-align: center;">Welcome to a
+                place where memories are created and smiles are shared !</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clothing Brand Store Infographics</p>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

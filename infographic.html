@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store Infographic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .infographic {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            max-width: 400px;
+            margin-top: 30px;
+        }
+
+        .content {
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6384;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e5005f;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Add shadow */
+        }
+
+        .infographic-bg {
+            background-image: url('https://t4.ftcdn.net/jpg/04/35/76/25/360_F_435762592_GHyTW0Bm45jSp1ZEG0aNqQ8AMU4FlYjn.jpg');
+            background-size: cover;
+            background-position: center;
+            /* Center the background */
+            padding: 60px;
+            border-radius: 20px;
+            /* Larger border-radius for container */
+            color: #fff;
+            margin-bottom: 0px;
+        }
+        .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px; /* Adjust margin bottom */
+    margin: top 0; /* Adjust margin top */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="infographic-bg">
+        <div class="infographic">
+            <h1>Clothing Store Infographic</h1>
+            <div class="chart-container">
+                <canvas id="pie-chart"></canvas>
+                <canvas id="bar-graph"></canvas>
+            </div>
+            <div class="image-container">
+                <img src="https://t3.ftcdn.net/jpg/05/24/86/92/240_F_524869206_0IIgsZaUdJPqWVWqfJbmqfyiyzHFXmGv.jpg"
+                    alt="Image 1">
+            </div>
+            <div class="content">
+                <p style="font-size: x-large;color: cornflowerblue;"><b>Explore the latest trends and best-selling items in our clothing
+                        store! From stylish tops to comfortable bottoms and fashionable accessories, we've got everything
+                        you need to elevate your wardrobe.</b></p>
+                <p style="color: chocolate;"><b>Don't miss out on our exclusive deals and promotions. Visit our online store now!</b></p>
+                <a href="#" class="cta-button">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var pieData = {
+            labels: ['Tops', 'Bottoms', 'Accessories'],
+            datasets: [{
+                data: [300, 450, 200],
+                backgroundColor: ['#ff6384', '#36a2eb', '#ffce56']
+            }]
+        };
+
+        var barData = {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+            datasets: [{
+                label: 'Sales',
+                data: [100, 200, 300, 400, 500, 600],
+                backgroundColor: '#36a2eb'
+            }]
+        };
+
+        var pieChartCanvas = document.getElementById('pie-chart').getContext('2d');
+        var barGraphCanvas = document.getElementById('bar-graph').getContext('2d');
+
+        var pieChart = new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: pieData
+        });
+
+        var barGraph = new Chart(barGraphCanvas, {
+            type: 'bar',
+            data: barData,
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
